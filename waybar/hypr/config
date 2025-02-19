@@ -1,0 +1,73 @@
+{
+  "layer": "top",
+  "output": "DP-1",
+    "modules-left": ["custom/symbol", "hyprland/workspaces", "custom/weather"], //custom weather is wttrbar, which can be built from source or downloaded from the AUR
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "mpd", "bluetooth", "tray"],
+    "custom/symbol": {
+      "format": "<span color='#D8DEE9'></span>",
+      "tooltip": false,
+    },
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "format": "{icon}",
+      "on-click": "activate",
+      "tooltip": false,
+      "all-outputs": true,
+      "format-icons": {
+       	"1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九",
+        "10": "十",
+      },
+      "sort-by-number": true 
+    },
+     "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}°",
+        "interval" : 3600,
+        "exec" : "wttrbar",
+        "return-type" : "json"
+    },
+    
+    "clock": {
+      "format": "<span color='#ffffff'> {:%H:%M}</span>",
+    },
+
+    "pulseaudio": {
+      "format": "<span color='#ffffff'>{icon} {volume}%</span>",
+      "format-muted": "",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+    },
+
+     "mpd": {
+      "format": "<span color='#D8DEE9'> {title}</span>",
+      "tooltip": false,
+      "max-length": 15,
+      "on-click": "mpc toggle",
+     },
+
+     "bluetooth": {
+      "format": "<span color='#ffffff'> {status}</span>",
+      "format-disabled": "", // an empty format will hide the module
+      "format-connected": "<span color='#ffffff'></span> {num_connections}",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+    },
+    
+    "tray": {
+    "spacing": 10
+    },
+}
+
