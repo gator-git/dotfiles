@@ -1,0 +1,119 @@
+* {
+  font-family: 'Fira Code Nerd Font', 'Symbols Nerd Font Mono';
+  font-size: 16px;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  min-height: 32px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#tags {
+  border-radius: 0px;
+  background-color: #2e3440;
+  color: #D8DEE9;
+  margin-top: 14px;
+  margin-right: 14px;
+  padding-top: 3px;
+  padding-left: 11px;
+  padding-bottom: 3px;
+  padding-right: 11px;
+  border: 2px solid #d8dee9;
+
+}
+
+#custom-fedora {
+  font-size: 20px;
+  border-radius:0px;
+  background-color: #2e3440;
+  color:#D8DEE9;
+  margin-top: 14px;
+  padding-top: 1px;
+  padding-left: 14px;
+  padding-right: 20px;
+  margin-left: 15px;
+  margin-right: 16px;
+  border: 2px solid #d8dee9;
+
+;
+}
+
+#tags button {
+  background-color: #2e3440;
+  color: #d8dee9;
+
+}
+
+#tags button.focused {
+    background: #2e3440;
+    color: #d8dee9;
+    border-radius: 0px;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    border: 2px solid #d8dee9;
+}
+
+#tags button:hover {
+    background: #d8dee9;
+    color: #2e3440;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#clock, #backlight, #pulseaudio, #bluetooth, #network, #battery, #tray, #custom-weather, #mpd{
+  border-radius: 0px;
+  background-color: #2e3440;
+  color: #D8DEE9;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+  border: 2px solid #d8dee9;
+
+}
+
+#backlight, #bluetooth {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 5px;
+  margin-right: 0;
+  border: 2px solid #d8dee9;
+
+}
+#network { 
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+border: 2px solid #d8dee9;
+margin-left: 10px;
+padding-right: 2px;
+}
+
+#pulseaudio, #mpd {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-left: 10px;
+  border: 2px solid #d8dee9;
+
+}
+
+#clock {
+  margin-right: 0;
+  border: 2px solid #d8dee9;
+
+}
+#tray {
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+padding-left: 12px;
+margin-left: 15px;
+border: 2px solid #d8dee9;
+
+}
+#custom-weather {
+border-radius: 0px;
+border: 2px solid #d8dee9;
+
+}
